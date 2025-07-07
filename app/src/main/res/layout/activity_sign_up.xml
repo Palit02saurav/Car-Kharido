@@ -1,10 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sign_Up_Activity">
+    tools:context=".Sign_Up_Activity"
+    android:background="@drawable/signin">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"/>
+    <TextView
+        android:id="@+id/para_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Just a few quick things to get started"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/signin_text"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/signin_emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/para_signin"
+        android:text="Email ID"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="23sp"/>
+
+    <EditText
+        android:id="@+id/signin_email_box"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter Email ID"
+        android:background="@drawable/rounded"
+        android:paddingStart="25dp"
+        android:layout_below="@+id/signin_emailid"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/signin_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_email_box"
+        android:text="New Password"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="23sp"/>
+
+    <EditText
+        android:id="@+id/signin_password_box"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="25dp"
+        android:hint="Enter Password"
+        android:background="@drawable/rounded"
+        android:layout_below="@+id/signin_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_password_box"
+        android:text="Confirm Password"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="23sp"/>
+
+    <EditText
+        android:id="@+id/confirm_password_box"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="25dp"
+        android:hint="Enter Password"
+        android:background="@drawable/rounded"
+        android:layout_below="@+id/confirm_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+
+
+
+
+    <CheckBox
+        android:id="@+id/signup_checkbox"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/confirm_password_box"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/signin_remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Agree With The Term's And Condition's"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/signup_checkbox"
+        android:paddingStart="5dp"
+        android:layout_below="@+id/confirm_password_box"/>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/signup_checkbox"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/signup_button"/>
+
+
+    <LinearLayout
+        android:id="@+id/divider_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#615C5C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Or with  "
+            android:textColor="#070707"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#837D7D" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/facebook_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_ternary"
+        android:layout_below="@+id/divider_section"
+        android:layout_marginRight="250dp"
+        android:paddingStart="15dp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        android:layout_marginLeft="30dp"
+        android:drawableStart="@drawable/ic_facebook"
+        />
+
+    <Button
+        android:id="@+id/google_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:drawableStart="@drawable/ic_google"
+        android:background="@drawable/button_ternary"
+        android:layout_below="@+id/divider_section"
+        android:paddingStart="20dp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:layout_marginLeft="250dp"
+        />
+
+
+    <TextView
+        android:id="@+id/bottom_text_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textColor="#575353"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+    <TextView
+        android:id="@+id/bottom_text_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_signinn"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/bottom_text_01"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

@@ -25,6 +25,9 @@
             android:exported="false" />
         <activity
             android:name=".Sign_In_Activity"
+            android:exported="false"/>
+        <activity
+            android:name=".Home_Activity"
             android:exported="true"
             android:theme="@style/Theme.CarKharido.NoActionBar">
             <intent-filter>
@@ -33,9 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Home_Activity"
-            android:exported="false"/>
     </application>
 
 </manifest>

@@ -18,10 +18,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:text="Bolter"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/nav_host_fragment_content_main"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Content Main"/>
+    </RelativeLayout>
 </RelativeLayout>
